@@ -1,0 +1,116 @@
+@use "../../sass/_variables.scss" as*; 
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+.product-detail__description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+
+.bExp{
+    height: 24px;
+    width: 128px;
+    background-color: rgb(212, 218, 212);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3019607843);
+    margin-top: 15px;
+    color: black;
+  }
+
+
+
+main {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card {
+  width: 100%;
+  background-color: rgb(227, 232, 235);
+  border: 1px solid #ccc;
+  padding: 25px;
+}
+
+.inputpd {
+  display: grid;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color:black;
+}
+
+
+
+textarea{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+select{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+
+}
+
+
+
+.submit{
+  height: 24px;
+  width: 128px;
+  background-color:gray;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 1px solid rgba(150, 92, 92, 0.302);
+  margin-top: 15px;
+  color: white;
+}
+
+.voltar{
+  color: white;
+    height: 24px;
+    width: 128px;
+    background-color:gray;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border: 1px solid rgba(150, 92, 92, 0.302);
+    margin-top: 15px;
+  }
+
+  
+
+.botoes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.a{
+  color: white;
+  font-size: 14px;
+
+}

@@ -1,0 +1,77 @@
+@use "../../sass/_variables.scss" as*; 
+
+.header-menu {
+  background-color: rgb(61, 59, 59);
+  color: orange;
+  box-sizing:content-box;
+  height: 220px;
+  width: 100%;
+  
+  display: grid;
+  grid-auto-flow: column;
+  justify-content:center;
+  align-items: center;
+
+  .div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  h1{
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    width: 100px;
+    padding: 1px;
+  }
+
+  ul {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    line-height: 9px;
+    padding: 15px;
+  }
+
+  ul li a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight:600;
+    font-size: 11px;
+    text-align: center;
+
+
+
+  }
+
+  .header-menu__logo{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    
+  }
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+
+}
+
+
