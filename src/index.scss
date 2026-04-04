@@ -1,45 +1,239 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
-* {
+// ── Reset ────────────────────────────────────────────────
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
 
-.button{
-  height: 24px;
-  width: 128px;
-  background-color: rgb(212, 218, 212);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3019607843);
-  margin-top: 20px;
-  color: black;
+a {
+  color: #000;
+  text-decoration: none;
 }
 
-a{
-  color: black;
+button {
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
 }
 
-button{
-  color: white;
-}
-
-h4{
+h4 {
   margin-bottom: -10px;
 }
 
-@media (max-width:900px) {
+// ── Shared page wrapper ──────────────────────────────────
+.product-detail__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 220px);
+  padding: 16px 20px;
 
-  p{
-      font-size: 20px;
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+    text-align: center;
   }
 
-  a{
-      font-size: 10px;
-
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 4px;
+    text-align: center;
   }
 
+  a {
+    font-weight: 600;
+  }
+}
+
+// ── Action / navigation button ───────────────────────────
+.bExp {
+  height: 34px;
+  min-width: 148px;
+  background-color: #d4dad4;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+// ── Back / return button ─────────────────────────────────
+.button1 {
+  height: 34px;
+  min-width: 148px;
+  background-color: #d4dad4;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+// ── Home page button ─────────────────────────────────────
+.button {
+  height: 34px;
+  min-width: 148px;
+  background-color: #d4dad4;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #000;
+
+  a {
+    color: #000;
+  }
+}
+
+// ── Form card ────────────────────────────────────────────
+.card {
+  width: 100%;
+  background-color: #e3e8eb;
+  border: 1px solid #b7b7b7;
+  border-radius: 8px;
+  padding: 25px;
+  margin-top: 16px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+    text-align: left;
+  }
+}
+
+// ── Form field wrapper ───────────────────────────────────
+.inputpd {
+  display: grid;
+  margin-bottom: 12px;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+  }
+}
+
+// ── Form controls ────────────────────────────────────────
+input,
+textarea,
+select {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #7a7a7a;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// ── Submit button ────────────────────────────────────────
+.submit {
+  height: 36px;
+  min-width: 148px;
+  background-color: #2e7d32;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// ── Voltar button ────────────────────────────────────────
+.voltar {
+  height: 36px;
+  min-width: 148px;
+  background-color: #d4dad4;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  a {
+    color: #000;
+  }
+}
+
+// ── Button row ───────────────────────────────────────────
+.botoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+// ── Responsive ───────────────────────────────────────────
+@media (max-width: 900px) {
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 10px;
+  }
 }

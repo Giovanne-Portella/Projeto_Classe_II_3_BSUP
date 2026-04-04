@@ -1,21 +1,24 @@
-@use "../../sass/_variables.scss" as*; 
+@use "../../sass/_variables.scss" as *;
 
 .header {
   width: 100%;
-  padding: 25px;
-  background-color: rgb(61, 59, 59);
-  color:orange;
+  padding: 20px 25px;
+  background-color: $header-bg;
+  color: $header-color;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: center;
   justify-content: center;
-}
+  gap: 16px;
 
-.header__img{
-  width: 125px;
-}
+  &__img {
+    width: 120px;
+  }
 
-.header_title{
-  padding: 16px;
+  &_title {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+  }
 }

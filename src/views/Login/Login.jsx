@@ -11,33 +11,28 @@ const Login = () => {
         <h1>Acesse com seu login</h1>
         <h2>Você pode entrar com o seu CPF</h2>
         <div className="login__input-wrapper">
-          <label className="label1" htmlFor="CPF">Digite seu CPF:</label>
+          <label htmlFor="cpf">Digite seu CPF:</label>
           <input
-            type="number"
+            type="text"
             placeholder="000.000.000-00"
-            id="name"
+            id="cpf"
             className="login__input-name"
           />
           <label htmlFor="password">Senha:</label>
           <input className="login__input-name" type="password" id="password" placeholder="********" />
         </div>
-        <button type="submit">
-        <Link to={"/home"}>Entrar</Link>
+        <button type="submit" className="login__btn-login">
+          <Link to={"/home"}>Entrar</Link>
         </button>
-
       </form><br />
 
       <div className="div2">
         <p>Ainda não possui cadastro?</p>
-        <button type="submit"  ><Link className="a" to={"/FormCadastro"}> Clique Aqui! </Link></button>
-
-        </div>
+        <button type="button"><Link to={"/FormCadastro"}>Clique Aqui!</Link></button>
+      </div>
 
       <footer>Desenvolvido por Giovanne Marinho</footer>
-
-
     </section>
-
   );
 };
 

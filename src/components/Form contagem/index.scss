@@ -1,36 +1,5 @@
-@use "../../sass/_variables.scss" as*; 
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-  }
-  
-.product-detail__description{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-
-.bExp{
-    height: 24px;
-    width: 128px;
-    background-color: rgb(212, 218, 212);
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.3019607843);
-    margin-top: 15px;
-    color: black;
-  }
+// Estilos globais compartilhados definidos em src/index.scss
+// Adicione estilos exclusivos do FormContagem abaixo, se necessário.
 
 
 

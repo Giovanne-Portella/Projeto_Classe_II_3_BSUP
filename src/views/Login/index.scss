@@ -1,4 +1,4 @@
-@use "../../sass/_variables.scss" as*; 
+@use "../../sass/_variables.scss" as *;
 
 .login {
   display: flex;
@@ -6,21 +6,24 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  
-  .login &__form label{
-    text-align: left;
-  }
-
-  .login__form h1{
-    font-size: 22px;
-  }
-  .login__form h2{
-    font-size: 18px;
-  }
+  min-height: 100vh;
 
   &__form {
     margin-top: 3rem;
     text-align: center;
+
+    label {
+      text-align: left;
+      display: block;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
   }
 
   h1 {
@@ -63,69 +66,57 @@
     width: 300px;
   }
 
-  button {
-    width: 100%;
+  &__btn-login {
+    width: 300px;
     border: none;
-    background-color: green;
+    background-color: $btn-success;
     border-radius: 6px;
-    padding: 5px;
+    padding: 8px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
+
+    a {
+      color: $white;
+      font-size: 18px;
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: $white;
-    font-size: 18px;
-  }
-
-   .a{
-    color: blue;
-  }
-
-  .p{
-    margin: -150px;
-    font-size: 14px;
-    font-weight:600;
-  
-  }
-
-  .p2{
-    font-size: 12px;
-  }
-
-  .div2{
+  .div2 {
     margin-bottom: 40px;
     padding: 2px;
+    text-align: center;
+
+    p {
+      margin-top: 12px;
+      font-size: 15px;
+      color: $black;
+      font-weight: 600;
+    }
+
+    button {
+      background-color: $white;
+      font-size: 11px;
+      font-weight: 700;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      margin-top: 10px;
+      padding: 4px 10px;
+      color: $black;
+      cursor: pointer;
+      transition: opacity 0.15s;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
   }
-
-  .div2 p{
-    margin-top: 10px;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-  }
-
-  .div2 button{
-
-    background-color: white;
-    font-size: 10px;
-    font-weight: 700;
-    font-weight: bold;
-    border: none;
-    margin-top: 15px;
-    color: black;
-  }
-
-
 }
 
-footer{
-  font-size: 10px;
-  text-align: left;
-  padding-top: 25px;
-  margin-bottom: 20px;
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+  color: #555;
 }

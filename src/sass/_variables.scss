@@ -1,6 +1,19 @@
-$header-background: #7a7a7a26;
-$black: black;
-$white: white;
-$border-input-color: #7a7a7a;
-$contrast-color: #0c70f2;
+// ── Palette ──────────────────────────────────────────────
+$header-bg:              #3d3b3b;
+$header-color:           #f5a623;
+$white:                  #ffffff;
+$black:                  #000000;
+$text-primary:           #222222;
+
+// Borders & inputs
+$border-input-color:     #7a7a7a;
 $border-background-card: #b7b7b7;
+
+// Backgrounds
+$btn-bg:                 #d4dad4;
+$card-bg:                #e3e8eb;
+$header-background:      rgba(122, 122, 122, 0.15);
+
+// Accents
+$contrast-color:         #0c70f2;
+$btn-success:            #2e7d32;

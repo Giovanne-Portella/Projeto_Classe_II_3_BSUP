@@ -4,8 +4,7 @@ import "./index.scss";
 import Header from "../Header/Header";
 
 
-const FormCadastro = ({ data }) => {
-  console.log(data);
+const FormCadastro = () => {
   return (
 
 
@@ -24,9 +23,8 @@ const FormCadastro = ({ data }) => {
             />
           </div>
           <div className="inputpd">
-            <label htmlFor="E-mail">E-mail:</label>
-            <input type="e-mail" className="pdnome" placeholder="insira seu e-mail aqui." required="required" name="E-mail"
-            />
+            <label htmlFor="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Insira seu e-mail aqui." required name="E-mail" />
           </div>
 
           <div className="inputpd">
@@ -40,18 +38,16 @@ const FormCadastro = ({ data }) => {
             />
           </div>
 
-          <div class="inputpd">
-            <label>Repita sua senha:</label>
-            <input type="password" id="pdqtd" placeholder="Repita sua senha novamente." required="required"
-              name="Repetir Senha" />
-
+          <div className="inputpd">
+            <label htmlFor="repetirSenha">Repita sua senha:</label>
+            <input type="password" id="repetirSenha" placeholder="Repita sua senha novamente." required name="Repetir Senha" />
           </div>
 
           <div className="botoes">
-          <button className="submit" type="submit">Enviar Cadastro</button>
-          <button className="voltar" type="submit">
-        <Link className="a" to={"/"}>Voltar ao início</Link>
-      </button>
+            <button className="submit" type="submit">Enviar Cadastro</button>
+            <button className="voltar" type="button">
+              <Link to={"/"}>Voltar ao início</Link>
+            </button>
           </div>
 
         </form>

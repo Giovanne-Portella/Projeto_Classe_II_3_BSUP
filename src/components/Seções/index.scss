@@ -1,16 +1,13 @@
+@use "../../sass/_variables.scss" as *;
 
-.home__card{
-    margin-top: 20px;
-    border: none;
-    font-size: 19px;
+.home__card {
+  margin-top: 16px;
+  font-size: 19px;
+  border: none;
 }
 
-
-
-button{
-    border-radius: 10px;
-}
-
-h1{
-    font-size: 25px;
+.home__card-description {
+  button {
+    border-radius: 4px;
+  }
 }

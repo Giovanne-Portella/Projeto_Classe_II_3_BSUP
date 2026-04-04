@@ -4,8 +4,7 @@ import "./index.scss";
 import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
 
-const Expedicao = ({ data }) => {
-  console.log(data);
+const Expedicao = () => {
   return (
     
     <div className="product-detail__description">
@@ -20,9 +19,9 @@ const Expedicao = ({ data }) => {
       <button className="bExp"><Link to={"/FormFechamento"}> Acessar Fechamento </Link></button><br /><br />
 
         <h3>Atualizações Diárias</h3><br />
-        <button className="bExp"> <a href="https://trello.com/invite/b/6gIIpx8d/ATTI84991aa63aaf6df7890a7ddf09be6442BFDC8A04/agendamentos-expedicao" target="_blank">Acessar Trello</a> </button>
+        <button className="bExp"> <a href="https://trello.com/invite/b/6gIIpx8d/ATTI84991aa63aaf6df7890a7ddf09be6442BFDC8A04/agendamentos-expedicao" target="_blank" rel="noreferrer">Acessar Trello</a> </button>
 
-      <button className="button1" type="submit">
+      <button className="button1" type="button">
         <Link to={"/home"}>Voltar ao Início</Link>
       </button><br />
 

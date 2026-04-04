@@ -1,77 +1,64 @@
-@use "../../sass/_variables.scss" as*; 
+@use "../../sass/_variables.scss" as *;
 
 .header-menu {
-  background-color: rgb(61, 59, 59);
-  color: orange;
-  box-sizing:content-box;
-  height: 220px;
+  background-color: $header-bg;
+  color: $header-color;
   width: 100%;
-  
+  padding: 12px 20px;
   display: grid;
   grid-auto-flow: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 
-  .div1{
+  .div1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
   }
 
-  h1{
-    font-size: 17px;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+  h1 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 6px;
+    color: $header-color;
   }
 
   &__logo {
+    cursor: pointer;
     width: 100px;
-    padding: 1px;
+    height: 100px;
+    padding: 2px;
+    transition: opacity 0.15s;
+
+    &:hover {
+      opacity: 0.85;
+    }
   }
 
   ul {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    list-style-type: none;
-    line-height: 9px;
-    padding: 15px;
-  }
-
-  ul li a{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight:600;
+    list-style-type: none;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  ul li a {
+    color: $white;
     font-size: 11px;
-    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.15s;
 
-
-
+    &:hover {
+      opacity: 0.75;
+    }
   }
-
-  .header-menu__logo{
-    cursor: pointer;
-    width: 120px;
-    height: 120px;
-    
-  }
-
-a{
-  text-decoration: none;
-  color: white;
-  font-size: 10px;
-}
-
-
 }
 
 
