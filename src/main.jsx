@@ -7,6 +7,7 @@ import Home from "./views/Home/Home";
 import Products from "./views/Products/Products";
 import { PRODUCTS_MOCK } from "./mock/products.mock";
 import Expedicao from "./components/Expedicao/Expedicao";
+import Recebimento from "./components/Recebimento/Recebimento";
 import FormCont from "./components/Form contagem/FormCont";
 import FormReceb from "./components/FormRecebimento/FormReceb";
 import FormCadastro from "./components/FormCadastro/FormCadastro";
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/products/:productId",
     element: <Products data={PRODUCTS_MOCK} />,
+  },
+
+  {
+    path: "/recebimento",
+    element: <Recebimento />,
   },
 
   {

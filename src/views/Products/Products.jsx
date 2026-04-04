@@ -10,9 +10,7 @@ const Products = ({ data }) => {
 
   return (
     <section className="product">
-      <HeaderMenu />
       <ProductDetail data={selectedProduct} />
-
     </section>
   );
 };

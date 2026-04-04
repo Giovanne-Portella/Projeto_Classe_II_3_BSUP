@@ -9,14 +9,14 @@ const SECTIONS = [
     label: "01",
     title: "Seção de Recebimento",
     description: "Formulários de controle, contagem e recebimento de materiais",
-    to: "/products/1",
+    to: "/recebimento",
   },
   {
     id: "expedicao",
     label: "02",
     title: "Seção de Expedição",
     description: "Guias de fornecimento, fechamento patrimonial e agendamentos",
-    to: "/Expedicao",
+    to: "/expedicao",
   },
   {
     id: "depositos",
