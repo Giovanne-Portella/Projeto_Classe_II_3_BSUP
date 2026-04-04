@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const ProductsCard = ({ data }) => {
-  console.log(data.title);
   return (
     <div className="home__card">
       <div className="home__card-description">

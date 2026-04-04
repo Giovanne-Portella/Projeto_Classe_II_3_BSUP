@@ -1,15 +1,15 @@
 @use "../../sass/_variables.scss" as *;
 
 .header-menu {
-  background-color: $header-bg;
-  color: $header-color;
+  background: linear-gradient(135deg, $header-bg 0%, #1a2535 100%);
+  border-bottom: 2px solid rgba($accent-amber, 0.3);
   width: 100%;
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 
   .div1 {
     display: flex;
@@ -20,45 +20,58 @@
   }
 
   h1 {
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 700;
     line-height: 1.4;
-    margin-top: 6px;
-    color: $header-color;
+    margin-top: 4px;
+    color: $accent-amber;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   &__logo {
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 68px;
+    height: 68px;
     padding: 2px;
-    transition: opacity 0.15s;
+    filter: drop-shadow(0 0 6px rgba($accent-amber, 0.3));
+    transition: filter 0.2s, transform 0.2s;
 
     &:hover {
-      opacity: 0.85;
+      filter: drop-shadow(0 0 14px rgba($accent-amber, 0.6));
+      transform: scale(1.05);
     }
   }
 
   ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     list-style-type: none;
-    padding: 8px;
+    padding: 4px 8px;
     gap: 8px;
   }
 
   ul li a {
-    color: $white;
+    color: $text-secondary;
     font-size: 11px;
     font-weight: 600;
     text-decoration: none;
-    transition: opacity 0.15s;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.15s;
+
+    &::before {
+      content: "›";
+      color: $accent-amber;
+      font-size: 15px;
+      line-height: 1;
+    }
 
     &:hover {
-      opacity: 0.75;
+      color: $accent-amber;
     }
   }
 }
-
-

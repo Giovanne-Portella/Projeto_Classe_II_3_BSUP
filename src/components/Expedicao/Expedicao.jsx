@@ -3,31 +3,78 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
+const ITEMS_FORMULARIOS = [
+  {
+    icon: "📄",
+    title: "Guias de Fornecimento",
+    desc: "Separação de materiais, ODF e GF por depósito",
+    to: "/FormGF",
+    external: false,
+  },
+  {
+    icon: "🗃️",
+    title: "Fechamento Patrimonial",
+    desc: "Relatório mensal de entradas, DIEx e valores por CC",
+    to: "/FormFechamento",
+    external: false,
+  },
+];
+
+const ITEMS_TRELLO = [
+  {
+    icon: "📌",
+    title: "Atualizações Diárias",
+    desc: "Quadro de agendamentos e tarefas da Expedição",
+    href: "https://trello.com/invite/b/6gIIpx8d/ATTI84991aa63aaf6df7890a7ddf09be6442BFDC8A04/agendamentos-expedicao",
+  },
+];
 
 const Expedicao = () => {
   return (
-    
-    <div className="product-detail__description">
-    <HeaderMenu />
-<br />
-      <h1>Expedição</h1><br />
+    <div className="sec-page">
+      <HeaderMenu />
 
-      <h3>Formulários</h3><br />
-      <h3>Separação de Materiais</h3><br />
-      <button  className="bExp"><Link to={"/FormGF"}> Acessar Guias </Link></button><br /><br />
-      <h3>Fechamento</h3><br />
-      <button className="bExp"><Link to={"/FormFechamento"}> Acessar Fechamento </Link></button><br /><br />
+      <div className="sec-hero">
+        <span className="sec-badge">Seção · Escritório de Expedição</span>
+        <h1>Expedição</h1>
+      </div>
 
-        <h3>Atualizações Diárias</h3><br />
-        <button className="bExp"> <a href="https://trello.com/invite/b/6gIIpx8d/ATTI84991aa63aaf6df7890a7ddf09be6442BFDC8A04/agendamentos-expedicao" target="_blank" rel="noreferrer">Acessar Trello</a> </button>
+      <div className="sec-group">
+        <h2 className="sec-group__title">Formulários</h2>
+        <div className="sec-cards">
+          {ITEMS_FORMULARIOS.map((item) => (
+            <div key={item.title} className="sec-card">
+              <span className="sec-card__icon">{item.icon}</span>
+              <div className="sec-card__body">
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+              <Link className="sec-card__btn" to={item.to}>Acessar</Link>
+            </div>
+          ))}
+        </div>
+      </div>
 
-      <button className="button1" type="button">
-        <Link to={"/home"}>Voltar ao Início</Link>
-      </button><br />
+      <div className="sec-group">
+        <h2 className="sec-group__title">Atualizações</h2>
+        <div className="sec-cards">
+          {ITEMS_TRELLO.map((item) => (
+            <div key={item.title} className="sec-card">
+              <span className="sec-card__icon">{item.icon}</span>
+              <div className="sec-card__body">
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+              <a className="sec-card__btn" href={item.href} target="_blank" rel="noreferrer">Abrir</a>
+            </div>
+          ))}
+        </div>
+      </div>
 
+      <div className="sec-back">
+        <Link className="sec-back__btn" to="/home">← Início</Link>
+      </div>
     </div>
-
-
   );
 };
 

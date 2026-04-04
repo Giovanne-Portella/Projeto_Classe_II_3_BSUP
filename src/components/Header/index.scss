@@ -2,23 +2,33 @@
 
 .header {
   width: 100%;
-  padding: 20px 25px;
-  background-color: $header-bg;
-  color: $header-color;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, $header-bg 0%, #1a2535 100%);
+  border-bottom: 1px solid rgba($accent-amber, 0.25);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 18px;
 
   &__img {
-    width: 120px;
+    width: 82px;
+    filter: drop-shadow(0 0 8px rgba($accent-amber, 0.35));
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: drop-shadow(0 0 16px rgba($accent-amber, 0.65));
+    }
   }
 
   &_title {
-    padding: 8px;
-    font-size: 18px;
-    line-height: 1.4;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.6;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $accent-amber;
   }
 }

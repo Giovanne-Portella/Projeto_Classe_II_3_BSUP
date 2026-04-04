@@ -10,8 +10,8 @@ const HeaderMenu = () => {
         <div>
 
       <ul className="ul1">
-        <li> <a href="https://classe2-3bsup-web-app.netlify.app/" target={"_blank"}>Intranet Classe II</a></li>
-        <li> <a href="https://docs.google.com/spreadsheets/d/17yzC5JV6akW6o0ywUPd1SwSZCLk6rDb7zE7_GfFczOo/edit?usp=sharing" target={"_blank"}>Relatório Semanal</a></li>
+        <li> <a href="https://classe2-3bsup-web-app.netlify.app/" target="_blank" rel="noreferrer">Intranet Classe II</a></li>
+        <li> <a href="https://docs.google.com/spreadsheets/d/17yzC5JV6akW6o0ywUPd1SwSZCLk6rDb7zE7_GfFczOo/edit?usp=sharing" target="_blank" rel="noreferrer">Relatório Semanal</a></li>
       </ul>
       </div>
       <div><br />

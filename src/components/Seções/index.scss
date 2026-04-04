@@ -1,13 +1,6 @@
 @use "../../sass/_variables.scss" as *;
 
+// Estilos base do card definidos em src/views/Home/index.scss
 .home__card {
-  margin-top: 16px;
-  font-size: 19px;
-  border: none;
-}
-
-.home__card-description {
-  button {
-    border-radius: 4px;
-  }
+  margin-top: 0;
 }

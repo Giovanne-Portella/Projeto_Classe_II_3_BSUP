@@ -18,9 +18,8 @@ const FormCadastro = () => {
           <h1>Formulários Classe II</h1><br />
           <h3>Cadastro Pessoal</h3><br /><br />
           <div className="inputpd">
-            <label htmlFor="Nome">Nome Completo:</label>
-            <input type="text" className="pdnome" placeholder="Insira seu nome aqui." required="required" name="Nome Completo"
-            />
+            <label htmlFor="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Insira seu nome aqui." required name="Nome Completo" />
           </div>
           <div className="inputpd">
             <label htmlFor="email">E-mail:</label>
@@ -28,14 +27,12 @@ const FormCadastro = () => {
           </div>
 
           <div className="inputpd">
-            <label>CPF:</label>
-            <input type="number" className="pdnome" placeholder="Insira seu CPF aqui." required="required" name="CPF"
-            />
+            <label htmlFor="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" required name="CPF" />
           </div>
           <div className="inputpd">
-            <label>Senha:</label>
-            <input type="password" className="pdnome" placeholder="Insira sua senha aqui." required="required"  name="Senha"
-            />
+            <label htmlFor="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Insira sua senha aqui." required name="Senha" />
           </div>
 
           <div className="inputpd">

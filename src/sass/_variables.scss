@@ -1,19 +1,35 @@
-// ── Palette ──────────────────────────────────────────────
-$header-bg:              #3d3b3b;
-$header-color:           #f5a623;
+// ── Backgrounds ──────────────────────────────────────────
+$bg-body:         #0f1923;
+$bg-surface:      #1a2535;
+$bg-card:         #1e2b40;
+$bg-input:        #111d2b;
+
+// ── Text ──────────────────────────────────────────────────
+$text-primary:    #e8eaf0;
+$text-secondary:  #8e9ab4;
+$text-muted:      #4e5b73;
+
+// ── Accents ───────────────────────────────────────────────
+$accent-amber:    #f5a623;
+$accent-green:    #2ea84f;
+$accent-blue:     #2563eb;
+
+// ── Borders ───────────────────────────────────────────────
+$border-subtle:   rgba(255, 255, 255, 0.07);
+$border-card:     rgba(255, 255, 255, 0.10);
+$border-input:    rgba(255, 255, 255, 0.15);
+
+// ── Header ────────────────────────────────────────────────
+$header-bg:       #111624;
+$header-color:    $accent-amber;
+
+// ── Aliases (backward compat) ─────────────────────────────
 $white:                  #ffffff;
 $black:                  #000000;
-$text-primary:           #222222;
-
-// Borders & inputs
-$border-input-color:     #7a7a7a;
-$border-background-card: #b7b7b7;
-
-// Backgrounds
-$btn-bg:                 #d4dad4;
-$card-bg:                #e3e8eb;
-$header-background:      rgba(122, 122, 122, 0.15);
-
-// Accents
-$contrast-color:         #0c70f2;
-$btn-success:            #2e7d32;
+$btn-bg:                 $bg-card;
+$card-bg:                $bg-card;
+$btn-success:            $accent-green;
+$contrast-color:         $accent-blue;
+$border-input-color:     $border-input;
+$border-background-card: $border-card;
+$header-background:      rgba(17, 22, 36, 0.85);

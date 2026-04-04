@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
   {
     path: "/home",
-    element: <Home data={PRODUCTS_MOCK} />,
+    element: <Home />,
   },
 
 
